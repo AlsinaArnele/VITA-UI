@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITA | Reset</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <section id="navbar">
+        <h1>VITA</h1>
+    </section>
+    <section id="container">
+            <form class="reset-container" action="/reset" method="post">
+                <h1>Reset Password</h1>
+                <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+                <p id="errorMessage"></p>
+                <div class="textbox">
+                    <h2>Email</h2>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="submit">
+                    <input type="submit" class="btn" value="Get Code">
+                </div>
+            </form>
+        <div class="image-container">
+            <!-- <img src="Images/logo.png" alt="Login"> -->
+            <!-- <img src="Images/Login-Image.png" alt="Login"> -->
+            <img src="/images/Login Image.svg" alt="">
+        </div>
+    </section>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const message = urlParams.get('message');
+      if (message) {
+        const messageElement = document.getElementById('errorMessage');
+        messageElement.innerText = message;}
+        if(message == "Verification successful!"){
+            const messageElement = document.getElementById('errorMessage');
+            messageElement.style.color = "green";
+            document.querySelector('.reset-container-2').style.display = "flex";
+        }
+        else{
+            const messageElement = document.getElementById('errorMessage');
+            messageElement.style.color = "red";}
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const message = urlParams.get('reset');
+      if (message) {
+        const messageElement = document.getElementById('verifycode');
+        messageElement.innerText = message;}
+        else{
+            const messageElement = document.getElementById('verifycode');
+            messageElement.innerText = "Obtain Code";}
+    });
+</script>
+</html>
