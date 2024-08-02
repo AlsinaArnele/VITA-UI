@@ -193,13 +193,16 @@ form h1{
     align-items: center;
 }
 .submit input{
-    width: 20vw;
+    width: 30vw;
     height: 6vh;
     font-size: 1vw;
     margin-right: 1vw;
     border: 1px solid #00856F;
     background-color: white;
     color: #00856F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .reset-container .submit input{
     margin: unset;
@@ -261,30 +264,30 @@ form h1{
         z-index: 5;
     }
     h1{
-        font-size: 4vh;
+        font-size: 4dvh;
     }   
     #navbar h1{
-        font-size: 3vh;
+        font-size: 3dvh;
     }
     h2{
-        font-size: 3vh;
+        font-size: 3dvh;
     }
     p{
-        font-size: 2vh;
+        font-size: 2dvh;
     }
     .textbox h2{
-        font-size: 2vh;
+        font-size: 2dvh;
     }
     #container{
         position: absolute;
         left: 0;
-        bottom: 5vh;
+        bottom: 5dvh;
         width: 100vw;
-        height: 90vh;
+        height: 90dvh;
         flex-direction: column-reverse;
     }
     .image-container{
-        height: 50%;
+        height: 40%;
         width: 100%;
     }
     .image-container img{
@@ -296,7 +299,7 @@ form h1{
         padding-left: 3vw;
         width: 94%;
         height: 70%;
-        border-radius: 2vh;
+        border-radius: 2dvh;
         margin-left: 0;
         box-shadow: none;
     }
@@ -307,8 +310,8 @@ form h1{
     .textbox input{
         padding-left: 2%;
         width: 98%;
-        height: 5vh;
-        font-size: 2vh;
+        height: 5dvh;
+        font-size: 2dvh;
     }
     .submit{
         width: 95%;
@@ -318,6 +321,6 @@ form h1{
     }
     .submit input{
         width: 95%;
-        font-size: 2vh;
+        font-size: 2dvh;
     }
 }
