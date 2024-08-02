@@ -720,6 +720,14 @@ nav a:hover{
         transform: rotate(0deg);
     }
 }
+@keyframes slideright{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 @media screen and (max-width: 800px){
     body{
         width: 100vw;
@@ -733,6 +741,7 @@ nav a:hover{
         display: none;
         z-index: 998;
         background-color: var(--quaternary-color);
+        animation: slideright .4s linear forwards;
 
         a{
             width: 40vw;

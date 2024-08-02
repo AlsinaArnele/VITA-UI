@@ -32,7 +32,6 @@
     }
 
     function menuDisplay() {
-        var body = document.getElementById('body');
         var menu = document.getElementById('nav');
         var burger = document.getElementById('burger');
         if(menu.style.display === 'none') {
