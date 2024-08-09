@@ -38,9 +38,9 @@
         <a onclick="responsivehistory()"><span class="material-symbols-outlined">history</span>History</a>
         
         <div class="bottom-nav">
-            <a onclick="profiletoggle()"><span class="material-symbols-outlined">settings</span>Settings</a>
+            <a><span class="material-symbols-outlined">settings</span>Settings</a>
         </div>
-        <div class="user">
+        <div class="user" onclick="profiletoggle()">
             <div class="img"><img src="images/happy.jpg" alt=""></div>
             <div class="textContent">Ronald</div>
         </div>
@@ -85,14 +85,14 @@
                 <h2>How Can I Help Today?</h2>
                 <div class="suggestion">Follow up on most recent illness</div>
                 <div class="suggestion"><span class="material-symbols-outlined">add</span>Suggested</div>
-            </div>
-            <div class="guide">
-                <div class="icon">
-                    <p>Guide</p>
-                    <h1>Image Quality</h1>
-                </div>
-                <div class="guide-text">
-                    <p>Please ensure the picture is taken in good lighting and is clear to help us better understand the affected area.</p>
+                <div class="guide">
+                    <div class="icon">
+                        <p>Guide</p>
+                        <h1>Image Quality</h1>
+                    </div>
+                    <div class="guide-text">
+                        <p>Please ensure the picture is taken in good lighting and is clear to help us better understand the affected area.</p>
+                    </div>
                 </div>
             </div>
            </div>
@@ -101,6 +101,9 @@
             <label class="label">
                 <span class="material-symbols-outlined">
                     arrow_forward
+                </span>
+                <span class="material-symbols-outlined" onclick="createImageForm()">
+                    attach_file
                 </span>
                 <input
                   type="text"
@@ -115,7 +118,7 @@
         <div class="left">
             <h1>Personal Details</h1>
             <div class="image">
-                <img src="sad.jpg" alt="">
+                <img src="images/happy.jpg" alt="">
                 <div class="image-buttons">
                     <button><span class="material-symbols-outlined">edit</span>UPLOAD</button>
                     <button><span class="material-symbols-outlined">delete</span>REMOVE</button>

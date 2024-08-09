@@ -9,13 +9,19 @@
     }
 
     function responsivehistory() {
+        if (window.innerWidth < 768) {
+            const history = document.getElementById('history');
+            if (history.style.display === 'none' || history.style.display === '') {
+                history.style.display = 'flex';
+            } else {
+                history.style.display = 'none';
+            }
+        }
         const history = document.getElementById('history');
         if (history.style.display === 'none' || history.style.display === '') {
             history.style.display = 'flex';
-            menuDisplay();
         } else {
             history.style.display = 'none';
-
         }
     }
     
@@ -41,4 +47,8 @@
             menu.style.display = 'none';
             burger.style.display = 'block';
         }
+    }
+
+    function imageUpload() {
+        
     }

@@ -203,6 +203,7 @@ form h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .reset-container .submit input{
     margin: unset;
@@ -237,6 +238,51 @@ form h1{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.forgot{
+    width: 15vw;
+    margin-left: 7.5vw;
+    text-align: center;
+}
+.or{
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2vh;
+    margin-left: 7.5vw;
+
+    .line{
+        width: 6vw;
+        height: 1px;
+        background-color: black;
+    }
+    p{
+        width: max-content;
+    }
+}
+.social{
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2vh;
+    margin-left: 7.5vw;
+
+    svg{
+        width: 2vw;
+        height: 2vw;
+
+        &:first-child:hover{
+            fill: red;
+        }
+        &:nth-last-child(2):hover{
+            fill: #1A0DAB;
+        }
+        &:last-child:hover{
+            fill: #00856F;
+        }
+    }
 }
 
 .image-container{
